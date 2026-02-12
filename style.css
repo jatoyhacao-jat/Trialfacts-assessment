@@ -1,162 +1,147 @@
-/* General Setup - Roboto Requirement [cite: 18] */
+/* Apply Roboto Font globally [cite: 105] */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #ffffff;
-    color: #333;
     line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
 }
 
-.main-wrapper {
+.page-container {
     max-width: 1100px;
     margin: 0 auto;
+    padding: 40px 20px;
 }
 
-h1 {
-    font-size: 2.5rem;
+header h1 {
+    font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 40px;
-    color: #1a1a1a;
+    margin-bottom: 50px;
+    color: #111;
 }
 
-.content-container {
+.layout-body {
     display: flex;
     gap: 60px;
 }
 
-/* Sidebar & Red Glow Hover */
+/* Sidebar Styling  */
 .sidebar {
-    width: 250px;
+    width: 260px;
     flex-shrink: 0;
 }
 
 .sidebar h3 {
-    border: none;
-    margin-top: 0;
     font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #000;
 }
 
-.nav-links {
+.sidebar nav ul {
     list-style: none;
     padding: 0;
+    margin-bottom: 40px;
 }
 
-.nav-links li {
+.sidebar nav li {
     margin-bottom: 12px;
 }
 
-.nav-links a {
+.sidebar nav a {
     text-decoration: none;
-    color: #555;
+    color: #444;
     font-size: 0.95rem;
     transition: all 0.3s ease;
-    display: inline-block;
 }
 
 /* Red Glow Hover Effect */
-.nav-links a:hover {
+.sidebar nav a:hover {
     color: #e54e53;
-    text-shadow: 0 0 8px rgba(229, 78, 83, 0.6);
-    transform: translateX(5px);
+    text-shadow: 0 0 10px rgba(229, 78, 83, 0.7);
+    padding-left: 5px;
 }
 
+/* Next Steps Box  */
 .next-steps-card {
-    border: 1px solid #e0e0e0;
-    border-radius: 15px;
+    border: 1px solid #eee;
     padding: 25px;
-    margin-top: 40px;
-    text-align: left;
+    border-radius: 12px;
     background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .next-steps-card h3 {
     text-align: center;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 .cta-button {
     display: block;
-    background-color: #e54e53;
+    background-color: #e54e53; /* Red color matching reference */
     color: white;
-    text-decoration: none;
-    padding: 14px;
-    border-radius: 30px;
-    font-weight: bold;
     text-align: center;
+    padding: 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
     margin-top: 20px;
-    transition: background 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #d43f44;
-}
-
-/* Main Content Spacing */
+/* Main Content Area  */
 .main-content {
     flex: 1;
 }
 
 h3 {
     font-size: 1.6rem;
-    margin: 40px 0 20px;
-    color: #000;
-}
-
-/* About the Study Layout Fix */
-.about-grid {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
-.about-text {
-    flex: 3;
-}
-
-.about-image {
-    flex: 2;
+/* Fixed About Study Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 30px;
+    margin-bottom: 20px;
 }
 
 .about-image img {
     width: 100%;
-    height: auto;
     border-radius: 4px;
-    display: block;
 }
 
-/* Who Can Participate - Bullet List */
-.criteria-list {
+.bullet-list {
+    margin-bottom: 30px;
     padding-left: 20px;
-    list-style-type: disc;
 }
 
-.criteria-list li {
+.bullet-list li {
     margin-bottom: 10px;
 }
 
-/* Research Centre Links & Formatting */
-.centre-info {
-    margin-bottom: 25px;
+/* Research Centre Links [cite: 147-151] */
+.centre-block {
+    margin-bottom: 30px;
 }
 
-.centre-link {
+.centre-block a {
     font-weight: bold;
     color: #000;
     text-decoration: underline;
     font-size: 1.1rem;
-}
-
-.approval-text {
-    font-style: italic;
-    margin-top: 30px;
-    text-align: center;
-    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 8px;
 }
 
 .map-container {
-    margin-top: 20px;
     border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
+/* Proper Header Tags [cite: 102, 104] */
+section {
+    margin-bottom: 60px;
+}
